@@ -5,6 +5,9 @@
 <!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
 <html>
     <head>
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Rock Paper Scissors</title>
@@ -16,6 +19,35 @@
         <!--[if lt IE 7]>
             <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
+
+        <div class="container">
+            <button id="rock">   
+                <p>PLAY ROCK?</p>
+                <img src="imgs/rock.png" alt="" height="80px">
+            </button>
+            <button id="paper">   
+                <p>PLAY PAPER?</p>
+                <img src="imgs/paper.png" alt="" height="80px">
+            </button>
+            <button id="scissors">   
+                <p>PLAY SCISSORS?</p>
+                <img src="imgs/scissors.png" alt="" height="80px">
+            </button>
+        </div>
+
+
+
+        <div class="score">
+
+            <div class="player">
+                <h2>Player</h2>
+                <p id="player-score">0</p>
+            </div>
+
+            <div class="computer">
+                <h2>Computer</h2>
+                <p id="computer-score">0</p>
+        </div>
         
         <script src="script.js" async defer></script>
     </body>
